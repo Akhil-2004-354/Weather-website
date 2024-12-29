@@ -1,0 +1,99 @@
+@font-face {
+    src: url(fonts/RobotoCondensed-VariableFont_wght.ttf);
+    font-family: Roboto condensed;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto condensed;
+}
+
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightgray;
+}
+
+.input-container{
+    border: none;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.city-input{
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#submit{
+    font-size: 1.5em;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: hsl(340, 57%, 64%);
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+#submit:hover{
+    background-color: hsl(340, 65%, 55%);
+    color: whitesmoke;
+}
+
+#submit:active{
+    background-color: hsl(340, 88%, 73%);
+    color: black;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    min-width: 250px;
+    min-height: 100px;
+    margin-top: 20px;
+    padding: 20px;
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    box-shadow: 10px 10px 20px;
+}
+
+.cityDisplay{
+    padding: 10px;
+}
+
+.tempDisplay{
+    padding: 10px;
+}
+
+.humidityDisplay{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+.descriptionDisplay{
+    font-size: 1.6em;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.weatherEmoji{
+    font-size: 4em;
+    padding: 10px;
+}
+
+.errorDisplay{
+    color: crimson;
+    font-weight: bold;
+    font-size: 1.4em;
+}
